@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="500" height="500"></canvas>
+<script>
+    var getCanvas = document.getElementById("myCanvas");
+    var drawThis = getCanvas.getContext("2d");
+    drawThis.strokeStyle = "Blue";
+    drawThis.lineWidth = 4;
+    drawThis.beginPath();
+    drawThis.arc(50, 90, 30, 0, 2*Math.PI, true);
+    drawThis.stroke();
+    drawThis.beginPath();
+    drawThis.arc(50, 40, 20, 0, 2*Math.PI, true);
+    drawThis.stroke();
+
+    drawThis.strokeStyle = "Black";
+    drawThis.beginPath();
+    drawThis.arc(45, 30, 1, 0, 2*Math.PI, true);
+    drawThis.stroke();
+    drawThis.fillStyle = "Black";
+    drawThis.fill();
+
+    drawThis.beginPath();
+    drawThis.arc(55, 30, 1, 0, 2*Math.PI, true);
+    drawThis.stroke();
+    drawThis.fillStyle = "Black";
+    drawThis.fill();
+
+    drawThis.strokeStyle = "Green";
+    drawThis.lineWidth = 3;
+    drawThis.beginPath();
+    drawThis.moveTo(23, 75);
+    drawThis.lineTo(0, 100);
+    drawThis.stroke();
+    drawThis.beginPath();
+    drawThis.moveTo(77, 75);
+    drawThis.lineTo(100, 100);
+    drawThis.stroke();
+
+</script>
+</body>
+</html>
